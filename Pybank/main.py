@@ -40,6 +40,14 @@ with open(input_path,"r",encoding='utf-8')as csv_file:
     date1=timelist[P_max]
     date2=timelist[P_min]
     
+    print('Financial Analysis')
+    print('-'*30)
+    print(f'Total month:{str(Total_Month)}')
+    print(f'Total:{str(Total)}')
+    print(f'Average change:{str(average_change)}')
+    print(f'Greatest Increase in Profits:{(str(date1))} {str(maxnum)})')
+    print(f'Greatest Decrease in Profits:{str((date2))} {(str(minnum))}')    
+
 
 output_path=os.path.join('analysis','summary.csv')
 
