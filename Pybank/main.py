@@ -5,7 +5,7 @@ input_path=os.path.join('Resources','budget_data.csv')
 
 
 with open(input_path,"r",encoding='utf-8')as csv_file:
-    csvreader=(csv.reader(csv_file,delimiter=","))
+    csvreader=csv.reader(csv_file,delimiter=",")
     header=next(csvreader)
 
     #creat list
