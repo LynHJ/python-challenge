@@ -23,16 +23,12 @@ with open(input_path,"r",encoding='utf-8')as csv_file:
     for data in datalist:
         Total+=data
 
-    #average change       
-        #[(a2-a1)+(a3-a2)+(a4-a3)]/3=(a4-a1)/3
-        change=datalist[-1]-datalist[0]
-        length=len(datalist)-1
-        average_change=round(change/length,2)
-
-
-    #Max and min
+    #average change,max and min       
     difference_list=[]    
-    for i in range(0,length):
+    for i in range(0,Total_Month-1):
+        change=datalist[-1]-datalist[0]
+        average_change=round(change/(Total_Month-1),2)
+
         difference=datalist[i+1]-datalist[i]
         difference_list.append(difference)    
 
