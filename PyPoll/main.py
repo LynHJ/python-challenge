@@ -49,10 +49,10 @@ with open(input_path,"r",encoding='utf-8')as csv_file:
     print('-'*42)
 
 
-output_path=os.path.join('analysis','votes.csv')
+output_path=os.path.join('analysis','votes.txt')
 
-with open(output_path,"w",encoding='utf-8')as csv_file:
-    csvwriter=csv.writer(csv_file,delimiter=",")
+with open(output_path,"w",encoding='utf-8')as txt_file:
+    csvwriter=csv.writer(txt_file,delimiter=",")
     
     csvwriter.writerow([f'Election Results'])
     csvwriter.writerow(['-'*42])

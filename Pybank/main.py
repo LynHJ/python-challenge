@@ -50,10 +50,10 @@ with open(input_path,"r",encoding='utf-8')as csv_file:
     print(f'Greatest Decrease in Profits:({str(date2)}) (${str(minnum)})')   
 
 
-output_path=os.path.join('analysis','summary.csv')
+output_path=os.path.join('analysis','summary.txt')
 
-with open(output_path,'w',encoding='utf-8')as csv_file:
-    csvwriter=csv.writer(csv_file,delimiter=",")
+with open(output_path,'w',encoding='utf-8')as txt_file:
+    csvwriter=csv.writer(txt_file,delimiter=",")
     
     csvwriter.writerow(['Financial Analysis'])
     csvwriter.writerow(["-"*30])
