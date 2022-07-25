@@ -23,8 +23,7 @@ with open(input_path,"r",encoding='utf-8')as csv_file:
     for data in datalist:
         Total+=data
 
-    #average change,max and min       
-    #(a2-a1)+(a3-a2)+(a4-a3)=a4-a1
+    #Average Chang,gereatest Increase in Profits, Greatest Decrease in Profits
     difference_list=[]    
     for i in range(0,Total_Month-1):
         change=datalist[-1]-datalist[0]
